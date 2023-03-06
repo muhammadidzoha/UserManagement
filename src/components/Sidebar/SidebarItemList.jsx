@@ -12,7 +12,6 @@ const SidebarItemList = (props) => {
         position="pt-[18px]"
         icon={<Dashboard />}
         title={props.titleDashboard}
-        active={props.active}
       />
       <SidebarItem
         position="mt-[18px]"
@@ -33,6 +32,7 @@ const SidebarItemList = (props) => {
         position="mt-[18px]"
         icon={<UserManagement />}
         title={props.titleUserManagement}
+        active={props.active}
       />
       <div className="absolute bottom-5">
         <SidebarItem
