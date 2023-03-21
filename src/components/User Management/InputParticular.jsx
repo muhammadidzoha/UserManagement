@@ -11,6 +11,7 @@ const InputParticular = (props) => {
             type={props.type}
             placeholder={props.placeholder}
             className="w-[200px] h-[28px] rounded-[5px] border border-1 border-[#D4D4D4] focus:outline-none text-xs px-3"
+            onChange={props.onChange}
           />
           <button
             type="button"

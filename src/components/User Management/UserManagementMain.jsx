@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
+import { Icon } from "@iconify/react";
 import FormAddNewAdmin from "./FormAddNewAdmin";
 import FormChangePassword from "./FormChangePassword";
 
@@ -58,6 +59,91 @@ const UserManagementMain = () => {
             icon2={showAdmin2 ? <IoMdEye /> : <IoMdEyeOff />}
           />
         </div>
+      </div>
+      <table class="table-auto mt-[30px] border border-1 border-black w-full text-center text-sm">
+        <thead className="bg-[#43B7F9] text-white">
+          <tr>
+            <th className="border border-1 border-black">No</th>
+            <th className="border border-1 border-black">Username</th>
+            <th className="border border-1 border-black">Role</th>
+            <th className="border border-1 border-black">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black">1</td>
+            <td className="border border-1 border-black">******</td>
+            <td className="border border-1 border-black">Superadmin</td>
+            <td className="border border-1 border-black">1961</td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black">2</td>
+            <td className="border border-1 border-black">UserTNIAL2</td>
+            <td className="border border-1 border-black">Admin</td>
+            <td className="border border-1 border-black">1961</td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black">3</td>
+            <td className="border border-1 border-black">UserTNIAL3</td>
+            <td className="border border-1 border-black">Admin</td>
+            <td className="border border-1 border-black">Admin</td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black">4</td>
+            <td className="border border-1 border-black">UserTNIAL4</td>
+            <td className="border border-1 border-black">Admin</td>
+            <td className="border border-1 border-black">Admin</td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+          </tr>
+          <tr className="border border-1 border-black h-[30px]">
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+            <td className="border border-1 border-black"></td>
+          </tr>
+        </tbody>
+      </table>
+      <div className="flex items-center justify-center space-x-5 mt-[26px]">
+        <Icon icon="ic:baseline-keyboard-arrow-left" />
+        <div className="flex space-x-2">
+          <p>1</p>
+          <span>-</span>
+          <p>10</p>
+          <p>page</p>
+          <p>1</p>
+          <span>of</span>
+          <p>1</p>
+        </div>
+        <Icon icon="ic:baseline-keyboard-arrow-right" />
       </div>
     </div>
   );

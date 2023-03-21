@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import MiniSidebarMain from "./components/Sidebar/MiniSidebarMain";
 import SidebarMain from "./components/Sidebar/SidebarMain";
-import { MdOutlineManageAccounts as UserManagement } from "react-icons/md";
-import UserManagementMain from "./components/User Management/UserManagementMain";
-
+import { Icon } from "@iconify/react";
+import GroupListMain from "./components/GroupList/GroupListMain";
 const Container = () => {
   const [open, setOpen] = useState(false);
 
@@ -21,10 +20,10 @@ const Container = () => {
             <div className="mt-[8px]">
               <Navbar
                 navbar="w-[475px]"
-                icon={<UserManagement />}
-                title="User Management"
+                icon={<Icon icon="mdi:format-list-group" />}
+                title="Group List"
               />
-              <UserManagementMain />
+              <GroupListMain />
             </div>
           </div>
         ) : (
@@ -33,10 +32,10 @@ const Container = () => {
             <div className="mt-[8px]">
               <Navbar
                 navbar="w-[627px]"
-                icon={<UserManagement />}
-                title="User Management"
+                icon={<Icon icon="mdi:format-list-group" />}
+                title="Group List"
               />
-              <UserManagementMain />
+              <GroupListMain />
             </div>
           </div>
         )}
